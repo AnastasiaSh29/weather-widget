@@ -1,0 +1,130 @@
+@import ./common/index
+
+
+html
+  width: 100%
+  height: 100%
+  margin:  0
+  padding: 0
+
+body 
+  max-width: 1440px
+  margin: 0 auto
+  height: 100vh
+  font: 100% $font-stack
+  color: $font-color
+  background-color: $widget-details-color
+
+.wrapper 
+  max-width: 420px
+  margin: 60px auto 
+
+
+.widget
+  border-radius: 30px
+  padding-top: 30px
+  background-color: $background
+
+
+.search
+  display: flex
+  justify-content: center
+  align-items: center
+  
+
+  &__input
+    width: calc(100% - 100px)
+    border-radius: 24px
+    border: 2px solid #7c7c7c6b 
+    outline: none
+    padding: 0.4em 1em
+    font-size: 15px
+    background: $details-background-color
+    color: $font-color
+
+  &__label
+    color: $details-color
+
+  &__button 
+    margin: 0.5em
+    border-radius: 50%
+    border: 2px solid #7c7c7c6b 
+    height: 37px
+    width: 37px
+    outline: none
+    background: $details-background-color
+    color: $font-color
+    cursor: pointer
+    transition: 0.2s ease-in-out
+    &:hover 
+      background: #7c7c7c6b
+
+.date-today
+  font-size: 15px
+  padding: 20px 0 0 10px
+
+
+.today
+  display: flex
+  justify-content: space-around
+  align-items: center 
+
+  &__wrap
+    margin-bottom: 20px
+
+  &__temp
+    font-size: 40px
+    font-weight: initial
+
+  &__weather
+    text-transform: capitalize
+    white-space: pre-line
+
+  &__city
+    font-size: 22px
+    margin-bottom: 5px
+    
+    
+    .icon
+      width: 75px
+
+
+  &__list
+    padding: 30px 0 15px 0
+     
+
+  .item
+    display: flex
+    justify-content: left
+    margin-bottom: 15px
+    padding: 0 15px
+    align-items: center
+    
+
+    &__day
+      width: 60px
+
+
+    &__icon
+      margin-right: 15px
+    
+
+    &__weather
+      text-transform: capitalize
+      white-space: pre-line
+
+
+    &__dayMinMin
+      margin-left: auto
+
+
+
+.loading
+  visibility: hidden
+  position: relative
+  &::after
+    visibility: visible
+    content: 'Loading...'
+    color: #fff
+    position: absolute
+    top: 0

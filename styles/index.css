@@ -1,0 +1,178 @@
+@import "../../vendor/fonts.css";
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@300;500;700&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  max-width: 1440px;
+  margin: 0 auto;
+  height: 100vh;
+  font: 100% "Dosis", "Inter", Helvetica, sans-serif;
+  color: #fff;
+  background-color: #1a202c;
+}
+
+.wrapper {
+  max-width: 420px;
+  margin: 60px auto;
+}
+
+.widget {
+  border-radius: 30px;
+  padding-top: 30px;
+  background-color: rgba(26, 32, 44, 0.7);
+}
+
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.search__input {
+  width: calc(100% - 100px);
+  border-radius: 24px;
+  border: 2px solid rgba(124, 124, 124, 0.4196078431);
+  outline: none;
+  padding: 0.4em 1em;
+  font-size: 15px;
+  background: rgba(46, 55, 72, 0.7);
+  color: #fff;
+}
+.search__label {
+  color: #000;
+}
+.search__button {
+  margin: 0.5em;
+  border-radius: 50%;
+  border: 2px solid rgba(124, 124, 124, 0.4196078431);
+  height: 37px;
+  width: 37px;
+  outline: none;
+  background: rgba(46, 55, 72, 0.7);
+  color: #fff;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+.search__button:hover {
+  background: rgba(124, 124, 124, 0.4196078431);
+}
+
+.date-today {
+  font-size: 15px;
+  padding: 20px 0 0 10px;
+}
+
+.today {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.today__wrap {
+  margin-bottom: 20px;
+}
+.today__temp {
+  font-size: 40px;
+  font-weight: initial;
+}
+.today__weather {
+  text-transform: capitalize;
+  white-space: pre-line;
+}
+.today__city {
+  font-size: 22px;
+  margin-bottom: 5px;
+}
+.today__city .icon {
+  width: 75px;
+}
+
+.days__list {
+  padding: 30px 0 15px 0;
+}
+.days .item {
+  display: flex;
+  justify-content: left;
+  margin-bottom: 15px;
+  padding: 0 15px;
+  align-items: center;
+}
+.days .item__day {
+  width: 60px;
+}
+.days .item__icon {
+  margin-right: 15px;
+}
+.days .item__weather {
+  text-transform: capitalize;
+  white-space: pre-line;
+}
+.days .item__dayMinMin {
+  margin-left: auto;
+}
+
+.loading {
+  visibility: hidden;
+  position: relative;
+}
+.loading::after {
+  visibility: visible;
+  content: "Loading...";
+  color: #fff;
+  position: absolute;
+  top: 0;
+}
+
+/*# sourceMappingURL=index.css.map */
